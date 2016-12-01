@@ -5,6 +5,8 @@
 		<meta name="description" content="First class accomodation in the Southern Cotswolds">
 		<meta charset='UTF-8'></meta>
 		<meta content='width=device-width, initial-scale=1.0' name='viewport'></meta>
+		<script src="https://use.typekit.net/hgt1mgq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<link href='css/nsv3-styles.css' type='text/css' rel='stylesheet'></link>
 
 	</head>
@@ -17,14 +19,8 @@
 				<nav class='siteNav'>
 					<ul>
 						<li><a href='index.html' title='Home'>Home</a></li>
-					</ul>
-					<ul>
 						<li><a href='booking.html' title='Booking information'>Booking</a></li>
-					</ul>
-					<ul>
 						<li><a href='bedandbreakfast.html' title='Bed and breakfast accomodation'>B&B</a></li>
-					</ul>
-					<ul>
 						<li><a href='contact.html' title='Contact or find us'>Contact</a></li>
 					</ul>
 				</nav>
@@ -34,9 +30,9 @@
 		<main>
 			<div class='innerWrapper'>
 				<h1>Bed & Breakfast</h1>
-				<p class='leaves'>Bed and Breakfast is available in Noades House to people walking the Cotswold Way long distance footpath. In addition, if you’re booking the Studio and would like friends or family to visit then additional accommodation can be provided in Noades House.</p>
+				<p class='leaves textBlock'>Bed and Breakfast is available in Noades House to people walking the Cotswold Way long distance footpath. In addition, if you’re booking the Studio and would like friends or family to visit then additional accommodation can be provided in Noades House.</p>
 				<h3>Prices</h2>
-				<p>Prices start at just £XX per person per night. If you’d like to book a room for B&B, just visit the bookings page and get in touch.</p>
+				<p class='textBlock'>Prices start at just £XX per person per night. If you’d like to book a room for B&B, just visit the <a href='booking.html'>bookings page</a> and get in touch.</p>
 
 				<img src='img/' alt=''>
 				
@@ -67,7 +63,7 @@
 
 		<footer>
 			<div class='innerWrapper'>
-				<p>Noades Studio<br>Tormarton, UK<br>hi@noadesstudio.co.uk</p>
+				<p>Noades Studio<br><span class='light'>Tormarton, UK<br>hi@noadesstudio.co.uk</span></p>
 				<nav class='footerNav'>
 					<ul>
 						<li><a href='termsandconditions.html' title='Terms and conditions'>Terms & conditions</a></li>
@@ -81,7 +77,7 @@
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
 	<script>
 		$( "#navToggle" ).click(function() {
-		  $( "#primaryNav" ).toggle( "slow", function() {
+		  $( "#siteNav" ).toggle( "slow", function() {
 		    // Animation complete.
 		  });
 		});

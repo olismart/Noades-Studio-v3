@@ -5,6 +5,8 @@
 		<meta name="description" content="First class accomodation in the Southern Cotswolds">
 		<meta charset='UTF-8'></meta>
 		<meta content='width=device-width, initial-scale=1.0' name='viewport'></meta>
+		<script src="https://use.typekit.net/hgt1mgq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<link href='css/nsv3-styles.css' type='text/css' rel='stylesheet'></link>
 
 	</head>
@@ -17,14 +19,8 @@
 				<nav class='siteNav'>
 					<ul>
 						<li><a href='index.html' title='Home'>Home</a></li>
-					</ul>
-					<ul>
 						<li><a href='booking.html' title='Booking information'>Booking</a></li>
-					</ul>
-					<ul>
 						<li><a href='bedandbreakfast.html' title='Bed and breakfast accomodation'>B&B</a></li>
-					</ul>
-					<ul>
 						<li><a href='contact.html' title='Contact or find us'>Contact</a></li>
 					</ul>
 				</nav>
@@ -36,10 +32,12 @@
 				<h1>Finding us</h1>
 
 				<div class='map'>
+					<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnTZYaDudcUgRHRR-XhWc1sY&key=AIzaSyBI2oe3m8vl0DDxvzZxroFNinjghX2gZrw" allowfullscreen></iframe> 
 				</div>
-
-				<p>When you arrive, keys can be collected from Noades House.</p>
-				<p class='leaves'>The nearest train station is Yate, but Bath Spa, Chippenham, Bristol Temple Meads and Bristol Parkway are all within a 30 minute drive. If you’d like to arrange a transfer to or from any local train stations, just let us know and we’ll be glad to help.</p>
+				<div class='textBlock'>
+					<p>When you arrive, keys can be collected from Noades House.</p>
+					<p class='leaves'>The nearest train station is Yate, but Bath Spa, Chippenham, Bristol Temple Meads and Bristol Parkway are all within a 30 minute drive. If you’d like to arrange a transfer to or from any local train stations, just let us know and we’ll be glad to help.</p>
+				</div>
 
 
 
@@ -69,7 +67,7 @@
 
 		<footer>
 			<div class='innerWrapper'>
-				<p>Noades Studio<br>Tormarton, UK<br>hi@noadesstudio.co.uk</p>
+				<p>Noades Studio<br><span class='light'>Tormarton, UK<br>hi@noadesstudio.co.uk</span></p>
 				<nav class='footerNav'>
 					<ul>
 						<li><a href='termsandconditions.html' title='Terms and conditions'>Terms & conditions</a></li>
@@ -83,7 +81,7 @@
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
 	<script>
 		$( "#navToggle" ).click(function() {
-		  $( "#primaryNav" ).toggle( "slow", function() {
+		  $( "#siteNav" ).toggle( "slow", function() {
 		    // Animation complete.
 		  });
 		});
