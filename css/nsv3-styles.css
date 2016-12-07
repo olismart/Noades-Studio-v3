@@ -46,7 +46,8 @@ img, video {
    Stylin'
    ========================================================================== */
 body {
-  background: #fcfdf7; }
+  background: #fcfdf7;
+  font-weight: 300; }
 
 h1, h2, h3 {
   color: #203f72; }
@@ -54,7 +55,7 @@ h1, h2, h3 {
 h1 {
   margin-top: 0;
   text-align: center;
-  padding-top: 4em; }
+  line-height: 1.2; }
 
 h2, h3 {
   margin: 0; }
@@ -72,7 +73,11 @@ button {
 
 .innerWrapper {
   margin: 0 auto;
-  padding: 0 1em; }
+  padding: 0 1em;
+  max-width: 60em; }
+
+main .innerWrapper {
+  padding: 4em 1em; }
 
 .pageHeader {
   background: #203f72;
@@ -96,14 +101,16 @@ button {
     margin: 0;
     padding: 0;
     list-style-type: none; }
-    .siteNav ul li a {
-      color: #fcfdf7;
-      text-decoration: none; }
-    .siteNav ul li a:hover {
-      text-decoration: underline; }
+    .siteNav ul li {
+      padding: 0.25em 0; }
+      .siteNav ul li a {
+        color: #fcfdf7;
+        text-decoration: none; }
+      .siteNav ul li a:hover {
+        text-decoration: underline; }
 
 main {
-  background: url(../img/pageBackground.jpg) center top no-repeat, url(../img/bottomLeaves.jpg) left bottom no-repeat;
+  background: url(../img/pageBackground2.jpg) center top no-repeat, url(../img/bottomLeaves.jpg) left bottom no-repeat;
   background-size: contain, 50%; }
   main h1, main h2, main h3, main p {
     text-align: center; }
@@ -123,7 +130,10 @@ main {
   main .studioArea {
     margin: 3em 0; }
 
-.row {
+.pageTitle {
+  margin-bottom: 0.3em; }
+
+.bandbImage {
   margin: 2em 0; }
 
 .contactSection .row {
@@ -179,9 +189,7 @@ form.wufoo {
 
 .info {
   display: inline-block;
-  clear: both;
-  margin: 0 0 5px 0;
-  padding: 0 1% 1.1em 1%; }
+  clear: both; }
 
 .info[class] {
   display: block; }
@@ -192,11 +200,6 @@ form.wufoo {
 .info h2 {
   font-weight: normal;
   text-align: left; }
-
-.info div {
-  font-size: 95%;
-  line-height: 135%;
-  color: #555555; }
 
 form ul {
   margin: 0;
@@ -630,9 +633,7 @@ form li.leftHalf, form li.leftThird, form li.leftFourth, form li.leftFifth {
 * html form li.middleFifth {
   margin-left: 1% !important; }
 
-form li.focused {
-  background-color: #fff7c0; }
-
+/*form li.focused{background-color:#fff7c0}*/
 form .instruct {
   position: absolute;
   top: 0;
@@ -811,6 +812,9 @@ form li.complex p.error {
     margin: 0 auto;
     padding: 0 2em; }
 
+  main .innerWrapper {
+    padding: 6em 2em; }
+
   main {
     padding-top: 2em; } }
 @media only screen and (min-width: 42em) {
@@ -836,10 +840,11 @@ form li.complex p.error {
 
   main {
     padding-top: 3em; }
+    main .studioArea {
+      margin: 3.5em 0; }
 
   .pageTitle {
-    max-width: 15em;
-    margin: auto; }
+    max-width: 15em; }
 
   .textBlock {
     margin: auto;
@@ -866,6 +871,16 @@ form li.complex p.error {
 
   form.wufoo {
     margin: 0; } }
+@media only screen and (min-width: 65em) {
+  html {
+    font-size: 1.25em; }
+
+  main .innerWrapper {
+    padding: 8em 2em; }
+  main .pageTitle, main .studioTitle {
+    font-size: 2.6em; }
+  main .studioArea {
+    margin: 4em 0; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

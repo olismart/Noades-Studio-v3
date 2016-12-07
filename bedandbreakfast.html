@@ -4,11 +4,12 @@
 		<title>Bed & Breakfast</title>
 		<meta name="description" content="First class accomodation in the Southern Cotswolds">
 		<meta charset='UTF-8'></meta>
+		<meta name="author" content="Oli Smart">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 		<meta content='width=device-width, initial-scale=1.0' name='viewport'></meta>
 		<script src="https://use.typekit.net/hgt1mgq.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<link href='css/nsv3-styles.css' type='text/css' rel='stylesheet'></link>
-
 	</head>
 	
 	<body>
@@ -17,25 +18,24 @@
 				<img src='img/ns-logotype-white.svg' alt='Noades Studio' class='headerLogo'>
 				<button class='siteNavToggle' id='navToggle'>Menu</button>
 				<nav class='siteNav' id='siteNav'>
-					<ul>
-						<li><a href='index.html' title='Home'>Home</a></li>
-						<li><a href='booking.html' title='Booking information'>Booking</a></li>
-						<li><a href='bedandbreakfast.html' title='Bed and breakfast accomodation'>B&B</a></li>
-						<li><a href='contact.html' title='Contact or find us'>Contact</a></li>
+					<ul role='menubar'>
+						<li role='menuitem'><a href='index.html' title='Home'>Home</a></li>
+						<li role='menuitem'><a href='booking.html' title='Booking information'>Booking</a></li>
+						<li role='menuitem'><a href='bedandbreakfast.html' title='Bed and breakfast accomodation'>B&B</a></li>
+						<li role='menuitem'><a href='contact.html' title='Contact or find us'>Contact</a></li>
 					</ul>
 				</nav>
 			</div><!-- close .innerWrapper -->
 		</header>
 
-		<main>
+		<main role='main'>
 			<div class='innerWrapper'>
-				<h1>Bed & Breakfast</h1>
+				<h1 class='pageTitle'>Bed & Breakfast</h1>
 				<p class='leaves textBlock'>Bed and Breakfast is available in Noades House to people walking the Cotswold Way long distance footpath. In addition, if you’re booking the Studio and would like friends or family to visit then additional accommodation can be provided in Noades House.</p>
 				<h3>Prices</h2>
 				<p class='textBlock'>Prices start at just £XX per person per night. If you’d like to book a room for B&B, just visit the <a href='booking.html'>bookings page</a> and get in touch.</p>
 
-				<img src='img/' alt=''>
-				
+				<img src='img/bedandbreakfast.jpg' alt='One of our bed & breakfast rooms' class='bandbImage'>
 
 				<section class='contactSection'>
 					<div class='row'>
@@ -48,22 +48,12 @@
 						</div>
 					</div><!-- close .row -->
 				</section>
-
-
-
 			</div><!-- close .innerWrapper -->
 		</main>
 
-
-
-
-
-
-
-
 		<footer>
 			<div class='innerWrapper'>
-				<p>Noades Studio<br><span class='light'>Tormarton, UK<br>hi@noadesstudio.co.uk</span></p>
+				<p><strong>Noades Studio</strong><br>Tormarton, UK<br>hi@noadesstudio.co.uk</p>
 				<nav class='footerNav'>
 					<ul>
 						<li><a href='termsandconditions.html' title='Terms and conditions'>Terms & conditions</a></li>

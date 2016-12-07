@@ -59,6 +59,7 @@ img, video{
    ========================================================================== */
 body{
 	background: $background;
+	font-weight: 300;
 }
 h1, h2, h3{
 	color: $primaryBlue;
@@ -66,7 +67,7 @@ h1, h2, h3{
 h1{
 	margin-top: 0;
 	text-align: center;
-	padding-top: 4em;
+	line-height: 1.2;
 }
 h2, h3{
 	margin: 0;
@@ -87,6 +88,10 @@ button{
 .innerWrapper{
 	margin: 0 auto;
 	padding: 0 1em;
+	max-width: 60em;
+}
+main .innerWrapper{
+	padding: 4em 1em;
 }
 .pageHeader{
 	background: $primaryBlue;
@@ -111,6 +116,7 @@ button{
 		padding: 0;
 		list-style-type: none;
 		li{
+			padding: 0.25em 0;
 			a{
 				color: $background;
 				text-decoration: none;
@@ -123,7 +129,7 @@ button{
 }
 
 main{
-	background: url(../img/pageBackground.jpg) center top no-repeat,
+	background: url(../img/pageBackground2.jpg) center top no-repeat,
 				url(../img/bottomLeaves.jpg) left bottom no-repeat
 	;
 	background-size: contain, 50%;
@@ -151,8 +157,10 @@ main{
 		margin: 3em 0;
 	}
 }
-
-.row{
+.pageTitle{
+	margin-bottom: 0.3em;
+}
+.bandbImage{
 	margin: 2em 0;
 }
 .contactSection .row{
@@ -205,8 +213,6 @@ form.wufoo{
 		.info{
 			display:inline-block;
 			clear:both;
-			margin:0 0 5px 0;
-			padding:0 1% 1.1em 1%;
 		}
 		.info[class]{
 			display:block
@@ -218,11 +224,7 @@ form.wufoo{
 			font-weight:normal;
 			text-align: left;
 		}
-		.info div{
-			font-size:95%;
-			line-height:135%;
-			color:#555
-		}
+
 		form ul{
 			margin:0;
 			padding:0;
@@ -410,7 +412,7 @@ form.wufoo{
 		form li.leftHalf,form li.leftThird,form li.leftFourth,form li.leftFifth{clear:left !important;float:left}
 		* html form li.middleFourth{margin-left:1% !important}
 		* html form li.middleFifth{margin-left:1% !important}
-		form li.focused{background-color:#fff7c0}
+		/*form li.focused{background-color:#fff7c0}*/
 		form .instruct{position:absolute;top:0;left:0;z-index:1000;width:45%;margin:0 0 0 8px;padding:8px 10px 10px 10px;border:1px solid #e6e6e6;background:#f5f5f5;visibility:hidden;opacity:0;font-size:105%;-webkit-transition:opacity 350ms ease-out;-moz-transition:opacity 350ms ease-out;-o-transition:opacity 350ms ease-out;transition:opacity 350ms ease-out}
 		form .instruct small{line-height:120%;font-size:80%;color:#444}
 		form li.focused .instruct,form li:hover .instruct{left:100%;visibility:visible;opacity:1}
@@ -453,6 +455,9 @@ form.wufoo{
 		margin: 0 auto;
 		padding: 0 2em;
 	}
+	main .innerWrapper{
+		padding: 6em 2em;
+	}
 	main{
 		padding-top: 2em;
 	}
@@ -482,10 +487,12 @@ form.wufoo{
 	}
 	main{
 		padding-top: 3em;
+		.studioArea{
+			margin: 3.5em 0;
+		}
 	}
 	.pageTitle{
 		max-width: 15em;
-		margin: auto;
 	}
 	.textBlock{
 		margin: auto;
@@ -515,7 +522,22 @@ form.wufoo{
 	}
 
 }
-
+@media only screen and (min-width: 65em) {
+	html{
+		font-size: 1.25em;
+	}
+	main {
+		.innerWrapper{
+			padding: 8em 2em;
+		}
+		.pageTitle, .studioTitle{
+			font-size: 2.6em;
+		}
+		.studioArea{
+			margin: 4em 0;
+		}
+	}
+}
 
 /* ==========================================================================
    Helper classes
