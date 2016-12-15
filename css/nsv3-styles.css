@@ -1,17 +1,18 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 * {
   box-sizing: border-box;
-  transition: all 0.5s ease; }
+  transition: all 0.3s ease; }
 
 body, html {
   margin: 0;
-  padding: 0;
-  height: 100%; }
+  padding: 0; }
 
 html {
   font-size: 1em;
   line-height: 1.4;
-  font-family: "prenton", 'gill sans', gill-sans, sans-serif; }
+  font-family: "prenton", 'gill sans', gill-sans, sans-serif;
+  background: #fcfdf7 url(../img/bottomLeaves.jpg) left bottom no-repeat;
+  background-size: 60%; }
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -47,7 +48,6 @@ img, video {
    Stylin'
    ========================================================================== */
 body {
-  background: #fcfdf7;
   font-weight: 300; }
 
 h1, h2, h3 {
@@ -66,7 +66,8 @@ h3 {
 
 p {
   margin: 0 0 1em;
-  color: #494954; }
+  color: #494954;
+  letter-spacing: 0.01em; }
   p a {
     color: inherit; }
   p a:hover {
@@ -74,7 +75,8 @@ p {
 
 button {
   font-size: inherit;
-  border-radius: 0.5em; }
+  border-radius: 0.5em;
+  font-weight: 500; }
 
 .innerWrapper {
   margin: 0 auto;
@@ -116,14 +118,17 @@ main .innerWrapper {
         text-decoration: underline; }
 
 main {
-  background: url(../img/pageBackground3.jpg) center top no-repeat, url(../img/bottomLeaves.jpg) left bottom no-repeat;
-  background-size: contain, 50%; }
+  background: url(../img/pageBackground-400.jpg) center top no-repeat;
+  background-size: contain; }
   main h1, main h2, main h3, main p {
     text-align: center; }
   main .intro {
     font-size: 1.125em;
     font-weight: 300;
     color: #203f72; }
+  main .multiLineTitle {
+    max-width: 80%;
+    margin: 0 auto 0.3em; }
   main .leaves:after {
     content: url(../img/2leaves.jpg);
     display: block;
@@ -154,9 +159,11 @@ main {
 
 footer {
   padding: 2em 0 0.5em 0;
-  background: #203f72; }
+  text-align: right; }
   footer p {
-    color: #fcfdf7; }
+    color: #203f72;
+    line-height: 1.2;
+    margin-top: 0.2em; }
 
 .footerNav ul {
   margin: 2em 0 0;
@@ -164,49 +171,133 @@ footer {
   list-style-type: none; }
   .footerNav ul li {
     font-size: 80%;
-    opacity: 0.7;
-    display: inline-block; }
+    display: block; }
     .footerNav ul li a {
-      color: #fcfdf7;
+      color: #203f72;
       text-decoration: none;
-      margin-right: 1em; }
+      margin-left: 1em;
+      opacity: 0.7; }
     .footerNav ul li a:hover {
-      text-decoration: underline; }
+      opacity: 1; }
+
+/*----- UNSLIDER -------*/
+.unsliderWrapper {
+  position: relative; }
+
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+  .unslider:after {
+    display: table;
+    clear: both;
+    content: ''; }
+
+.unslider-wrap {
+  position: relative; }
+
+.unslider-wrap.unslider-carousel > li {
+  float: left; }
+
+.unslider-vertical > ul {
+  height: 100%; }
+
+.unslider-vertical li {
+  float: none;
+  width: 100%; }
+
+.unslider-fade {
+  position: relative; }
+
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8; }
+
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10; }
+
+.unslider li, .unslider ol, .unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.unslider-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer;
+  color: #203f72;
+  font-weight: 500; }
+
+.unslider-arrow.next {
+  left: auto;
+  right: 20px; }
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center; }
+
+.unslider-nav ol li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer; }
+
+.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default; }
 
 /*---- FORM ----------------------*/
-.jotform-form .form-section {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-.jotform-form h3 {
-  text-align: left; }
-.jotform-form .form-line {
-  margin: 0.25em 0; }
-.jotform-form .form-textbox, .jotform-form .form-textarea {
-  border: 1px solid #203f72;
-  font-size: inherit;
-  border-radius: 0.125em;
-  width: 100%;
-  max-width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  padding: 2px 4px; }
-.jotform-form .form-textbox:focus, .jotform-form .form-textarea:focus {
-  box-shadow: 0 0 0.5em #366bc2; }
-.jotform-form label {
-  color: #494954; }
-.jotform-form button {
-  font-family: inherit;
-  background: #203f72;
-  color: #fcfdf7;
-  border: none;
-  padding: 0.3em 0.8em;
-  margin-top: 1em; }
-.jotform-form button:hover {
-  cursor: pointer;
-  background: #15294a;
-  box-shadow: 0 0.25em 0.4em #203f72; }
+.jotform-form {
+  width: 100%; }
+  .jotform-form .form-section {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .jotform-form h3 {
+    text-align: left; }
+  .jotform-form .form-line {
+    margin: 0.25em 0; }
+  .jotform-form .form-textbox, .jotform-form .form-textarea {
+    border: 1px solid #203f72;
+    font-size: inherit;
+    border-radius: 0.125em;
+    width: 100%;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    padding: 2px 4px; }
+  .jotform-form .form-textbox:focus, .jotform-form .form-textarea:focus {
+    box-shadow: 0 0 0.5em #366bc2; }
+  .jotform-form label {
+    color: #494954; }
+  .jotform-form button {
+    font-family: inherit;
+    background: #203f72;
+    color: #fcfdf7;
+    border: none;
+    padding: 0.3em 0.8em;
+    margin-top: 1em; }
+  .jotform-form button:hover {
+    cursor: pointer;
+    background: #15294a;
+    box-shadow: 0 0.25em 0.4em #203f72; }
 
+@media only screen and (max-width: 42em) {
+  main .intro {
+    margin: auto;
+    max-width: 80%; } }
 @media only screen and (min-width: 28em) {
   .innerWrapper {
     margin: 0 auto;
@@ -242,6 +333,8 @@ footer {
     padding-top: 3em; }
     main .studioArea {
       margin: 3.5em 0; }
+    main .leaves:after {
+      margin: 2em auto; }
 
   .jotform-form .form-line {
     margin: 0.5em 0; }
@@ -263,7 +356,7 @@ footer {
     float: left; }
 
   .textColumn {
-    padding: 0 1em; }
+    padding: 0 1.5em; }
 
   .row:before, .row:after {
     content: " ";
@@ -272,8 +365,8 @@ footer {
   .row:after {
     clear: both; }
 
-  form.wufoo {
-    margin: 0; } }
+  .footerNav ul li {
+    display: inline-block; } }
 @media only screen and (min-width: 65em) {
   html {
     font-size: 1.25em; }
@@ -283,7 +376,27 @@ footer {
   main .pageTitle, main .studioTitle {
     font-size: 2.6em; }
   main .studioArea {
-    margin: 4em 0; } }
+    margin: 4em 0; }
+  main .textColumn {
+    padding: 0 2em; }
+  main .leaves:after {
+    margin: 3em auto; } }
+@media only screen and (min-width: 400px) {
+  main {
+    background: url(../img/pageBackground-700.jpg) center top no-repeat;
+    background-size: contain; } }
+@media only screen and (min-width: 700px) {
+  main {
+    background: url(../img/pageBackground-1000.jpg) center top no-repeat;
+    background-size: contain; } }
+@media only screen and (min-width: 1000px) {
+  main {
+    background: url(../img/pageBackground-1400.jpg) center top no-repeat;
+    background-size: contain; } }
+@media only screen and (min-width: 1400px) {
+  main {
+    background: url(../img/pageBackground-1800.jpg) center top no-repeat;
+    background-size: contain; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -323,8 +436,3 @@ footer {
 
 .cf {
   *zoom: 1; }
-
-.foo:after {
-  display: table;
-  clear: both;
-  content: ''; }
