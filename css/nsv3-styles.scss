@@ -318,7 +318,7 @@ footer{
 	}
 
 }
-@media only screen and (max-width: 42em) {
+@media only screen and (max-width: 50em) {
 	main{
 		.intro{
 			margin: auto;
@@ -333,7 +333,7 @@ footer{
 		padding: 0 2em;
 	}
 	main .innerWrapper{
-		padding: 6em 2em;
+		padding: 5em 2em;
 	}
 	main{
 		padding-top: 2em;
@@ -370,15 +370,14 @@ footer{
 		.leaves:after{
 			margin: 2em auto;
 		}
+
 	}
 	.jotform-form{
 		.form-line{
 			margin: 0.5em 0;
 		}
 	}
-	.multiLineTitle{
-		max-width: 15em;
-	}
+	
 	.textBlock{
 		margin: auto;
 		max-width: 30em;
@@ -417,7 +416,7 @@ footer{
 	}
 	main {
 		.innerWrapper{
-			padding: 10em 2em;
+			padding: 7em 2em;
 		}
 		.pageTitle, .studioTitle{
 			font-size: 2.6em;
@@ -431,8 +430,10 @@ footer{
 		.leaves:after{
 			margin: 3em auto;
 		}
+		.multiLineTitle{
+			max-width: 80%;
+		}
 	}
-	
 }
 
 
