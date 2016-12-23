@@ -11,7 +11,6 @@ $grey: #494954;
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 *{
 	box-sizing: border-box;
-	transition: all 0.3s ease;
 }
 body, html{
 	margin: 0;
@@ -88,6 +87,7 @@ p{
 	letter-spacing: 0.01em;
 	a{
 		color: inherit;
+		transition: all 0.3s ease;
 	}
 	a:hover{
 		color: $primaryBlue;
@@ -136,6 +136,7 @@ main .innerWrapper{
 			a{
 				color: $background;
 				text-decoration: none;
+				transition: all 0.3s ease;
 			}
 			a:hover{
 				text-decoration: underline;
@@ -193,7 +194,6 @@ main{
 	margin: 1em 0 2em;
 }
 footer{
-	
 	padding: 2em 0 0.5em 0;
 	text-align: right;
 	p{
@@ -216,6 +216,7 @@ footer{
 				text-decoration: none;
 				margin-left: 1em;
 				opacity: 0.7;
+				transition: all 0.3s ease;
 			}
 			a:hover{
 				opacity: 1;

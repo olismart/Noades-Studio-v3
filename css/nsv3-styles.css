@@ -1,7 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 * {
-  box-sizing: border-box;
-  transition: all 0.3s ease; }
+  box-sizing: border-box; }
 
 body, html {
   margin: 0;
@@ -69,7 +68,8 @@ p {
   color: #494954;
   letter-spacing: 0.01em; }
   p a {
-    color: inherit; }
+    color: inherit;
+    transition: all 0.3s ease; }
   p a:hover {
     color: #203f72; }
 
@@ -113,7 +113,8 @@ main .innerWrapper {
       padding: 0.25em 0; }
       .siteNav ul li a {
         color: #fcfdf7;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all 0.3s ease; }
       .siteNav ul li a:hover {
         text-decoration: underline; }
 
@@ -176,7 +177,8 @@ footer {
       color: #203f72;
       text-decoration: none;
       margin-left: 1em;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.3s ease; }
     .footerNav ul li a:hover {
       opacity: 1; }
 
