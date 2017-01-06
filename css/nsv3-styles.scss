@@ -23,10 +23,7 @@ html {
 	background: $background url(../img/bottomLeaves.jpg) left bottom no-repeat;
 	background-size: 60%;
 }
-::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
+
 
 ::selection {
 	background: #b3d4fc;
@@ -154,7 +151,7 @@ main .innerWrapper{
 
 main{
 	background: url(../img/pageBackground-400.jpg) center top no-repeat;
-	background-size: contain;
+	display: block;
 	h1, h2, h3, p{
 		text-align: center;
 	}
@@ -467,6 +464,8 @@ footer{
 	main{
 		background: url(../img/pageBackground-1800.jpg) center top no-repeat;
 		background-size: contain;
+		
+
 	}
 }
 
@@ -484,7 +483,6 @@ footer{
 
 .visuallyhidden {
 	border: 0;
-	clip: rect(0 0 0 0);
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
